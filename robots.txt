@@ -1,4 +1,4 @@
-# robots.txt for Left — Widgets for Time Left
+# robots.txt for ftnss — AI Fitness Coach
 
 # Allow all crawlers to index the site
 User-agent: *
@@ -10,4 +10,4 @@ Allow: /style.css
 Allow: /index.html
 
 # Sitemap (absolute URL)
-Sitemap: https://left-time.app/sitemap.xml
+Sitemap: https://ftnss.app/sitemap.xml
