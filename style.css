@@ -522,13 +522,14 @@ a:hover { text-decoration: none; font-weight: 700; }
 .checklist li { margin: 6px 0; position: relative; padding-left: 16px; }
 .checklist li::before { content: "-"; position: absolute; left: 0; color: var(--text); opacity: 0.95; }
 
-/* Inner pages (e.g. support) */
+/* Inner pages (e.g. support) — nav is fixed 56px; pad by bar + safe area + gap */
 .page-shell {
-  padding-top: calc(80px + env(safe-area-inset-top));
+  padding-top: calc(56px + env(safe-area-inset-top, 0px) + 48px);
   padding-bottom: 56px;
 }
 .page-shell h1 {
   margin: 0 0 16px;
+  padding-top: 8px;
   font-size: clamp(28px, 4vw, 40px);
   font-weight: 900;
   letter-spacing: -0.02em;
@@ -543,8 +544,14 @@ a:hover { text-decoration: none; font-weight: 700; }
 .page-shell p:last-child {
   margin-bottom: 0;
 }
-.page-shell a:not(.btn) {
+/* Inline links: match page text (bold white), not browser default blue */
+.page-shell a:not(.btn):any-link {
   color: var(--text);
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-text-fill-color: var(--text);
+}
+.page-shell a:not(.btn):hover {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
