@@ -560,31 +560,6 @@ a:hover { text-decoration: none; font-weight: 700; }
 }
 
 /* Privacy page */
-.privacy-page .privacy-app-name {
-  margin: 0 0 8px;
-  font-size: clamp(40px, 7vw, 56px);
-  font-weight: 900;
-  letter-spacing: -0.02em;
-  color: var(--text);
-}
-.privacy-page .privacy-lead {
-  color: var(--text-dim);
-  font-size: clamp(16px, 2.1vw, 18px);
-}
-.privacy-page .privacy-appstore {
-  margin: 8px 0 32px;
-}
-.privacy-page .privacy-appstore-link {
-  display: inline-block;
-  line-height: 0;
-  border-radius: 12px;
-  overflow: hidden;
-}
-.privacy-page .privacy-appstore img {
-  display: block;
-  width: clamp(200px, 55vw, 245px);
-  height: auto;
-}
 .privacy-page h1.privacy-policy-title {
   margin: 0 0 16px;
   padding-top: 0;
@@ -606,6 +581,11 @@ a:hover { text-decoration: none; font-weight: 700; }
   font-weight: 700;
   color: var(--text);
 }
+.privacy-page .privacy-section h3 a:any-link {
+  color: inherit;
+  font-weight: inherit;
+  -webkit-text-fill-color: inherit;
+}
 .privacy-page ul {
   margin: 0 0 16px;
   padding-left: 1.2em;
@@ -622,9 +602,4 @@ a:hover { text-decoration: none; font-weight: 700; }
 .privacy-page .privacy-strong {
   color: var(--text);
   font-weight: 700;
-}
-.privacy-page .privacy-updated {
-  margin-top: 20px;
-  color: var(--text-dim);
-  font-size: 15px;
 }
