@@ -558,3 +558,73 @@ a:hover { text-decoration: none; font-weight: 700; }
 .support-cta {
   margin-top: 24px !important;
 }
+
+/* Privacy page */
+.privacy-page .privacy-app-name {
+  margin: 0 0 8px;
+  font-size: clamp(40px, 7vw, 56px);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+.privacy-page .privacy-lead {
+  color: var(--text-dim);
+  font-size: clamp(16px, 2.1vw, 18px);
+}
+.privacy-page .privacy-appstore {
+  margin: 8px 0 32px;
+}
+.privacy-page .privacy-appstore-link {
+  display: inline-block;
+  line-height: 0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.privacy-page .privacy-appstore img {
+  display: block;
+  width: clamp(200px, 55vw, 245px);
+  height: auto;
+}
+.privacy-page h1.privacy-policy-title {
+  margin: 0 0 16px;
+  padding-top: 0;
+  font-size: clamp(26px, 3.5vw, 36px);
+}
+.privacy-page .privacy-section h2 {
+  margin: 28px 0 10px;
+  font-size: clamp(20px, 2.8vw, 26px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+.privacy-page .privacy-section:first-of-type h2 {
+  margin-top: 20px;
+}
+.privacy-page .privacy-section h3 {
+  margin: 20px 0 8px;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text);
+}
+.privacy-page ul {
+  margin: 0 0 16px;
+  padding-left: 1.2em;
+  color: var(--text-dim);
+  max-width: 720px;
+  line-height: 1.55;
+}
+.privacy-page li {
+  margin: 8px 0;
+}
+.privacy-page .privacy-section p {
+  max-width: 720px;
+}
+.privacy-page .privacy-strong {
+  color: var(--text);
+  font-weight: 700;
+}
+.privacy-page .privacy-updated {
+  margin-top: 20px;
+  color: var(--text-dim);
+  font-size: 15px;
+}
