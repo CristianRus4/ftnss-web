@@ -521,3 +521,33 @@ a:hover { text-decoration: none; font-weight: 700; }
 .checklist { margin: 0; padding-left: 0; color: var(--text-dim); list-style: none; }
 .checklist li { margin: 6px 0; position: relative; padding-left: 16px; }
 .checklist li::before { content: "-"; position: absolute; left: 0; color: var(--text); opacity: 0.95; }
+
+/* Inner pages (e.g. support) */
+.page-shell {
+  padding-top: calc(80px + env(safe-area-inset-top));
+  padding-bottom: 56px;
+}
+.page-shell h1 {
+  margin: 0 0 16px;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+.page-shell p {
+  margin: 0 0 16px;
+  color: var(--text-dim);
+  font-size: 16px;
+  max-width: 720px;
+  line-height: 1.55;
+}
+.page-shell p:last-child {
+  margin-bottom: 0;
+}
+.page-shell a:not(.btn) {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.support-cta {
+  margin-top: 24px !important;
+}
